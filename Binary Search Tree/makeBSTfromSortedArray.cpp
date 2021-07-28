@@ -15,7 +15,7 @@ struct Node{
      if(start>end){
          return NULL;
      }
-     int mid=start+(end-start)/2;
+     int mid=(end+start)/2;
      Node* root=new Node(arr[mid]);
      root->left=generateBST(arr,start,mid-1);
      root->right=generateBST(arr,mid+1,end);
